@@ -38,6 +38,7 @@
   },
   "name":"Frogger Clone",
   "resources":[
+    {"id":{"name":"fn_play","path":"fonts/fn_play/fn_play.yy",},},
     {"id":{"name":"ob_car_1_left","path":"objects/ob_car_1_left/ob_car_1_left.yy",},},
     {"id":{"name":"ob_car_1_right","path":"objects/ob_car_1_right/ob_car_1_right.yy",},},
     {"id":{"name":"ob_car_2_left","path":"objects/ob_car_2_left/ob_car_2_left.yy",},},
@@ -58,6 +59,7 @@
     {"id":{"name":"ob_rock_right","path":"objects/ob_rock_right/ob_rock_right.yy",},},
     {"id":{"name":"ob_ship_left","path":"objects/ob_ship_left/ob_ship_left.yy",},},
     {"id":{"name":"ob_ship_right","path":"objects/ob_ship_right/ob_ship_right.yy",},},
+    {"id":{"name":"ob_text","path":"objects/ob_text/ob_text.yy",},},
     {"id":{"name":"ob_tree","path":"objects/ob_tree/ob_tree.yy",},},
     {"id":{"name":"ob_vehicles_left","path":"objects/ob_vehicles_left/ob_vehicles_left.yy",},},
     {"id":{"name":"ob_vehicles_right","path":"objects/ob_vehicles_right/ob_vehicles_right.yy",},},
