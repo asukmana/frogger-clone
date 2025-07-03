@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"ob_rider",
+  "%Name":"ob_rider_right",
   "eventList":[],
   "managed":true,
-  "name":"ob_rider",
+  "name":"ob_rider_right",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"vehicles right",
+    "path":"folders/Objects/vehicles right.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"ob_vehicles_right",
+    "path":"objects/ob_vehicles_right/ob_vehicles_right.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

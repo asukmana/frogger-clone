@@ -22,15 +22,23 @@ if global.player_live > 0
 		}
 		else
 		{			
-			var _land_vehicles_left = choose(ob_car_1_left, ob_car_2_left, ob_car_3_left, ob_car_4_left, ob_car_5_left, ob_motorcycle_left);
-			var _land_vehicles_right = choose(ob_car_1_right, ob_car_2_right, ob_car_3_right, ob_car_4_right, ob_car_5_right, ob_motorcycle_right);
+			var _land_vehicles_left = choose(ob_car_1_left, ob_car_2_left, ob_car_3_left, ob_car_4_left, ob_car_5_left, ob_rider_left);
+			var _land_vehicles_right = choose(ob_car_1_right, ob_car_2_right, ob_car_3_right, ob_car_4_right, ob_car_5_right, ob_rider_right);
 			if _i % 2 == 0
 			{
-				instance_create_layer(room_width, 192 + 128 * _i, "Instances", _land_vehicles_right);    
+				instance_create_layer(room_width, 192 + 128 * _i, "Instances", _land_vehicles_right);
+				if _land_vehicles_right == ob_rider_right
+				{
+					instance_create_layer(room_width, 192 + 128 * _i, "Instances", ob_motorcycle_right);
+				}
 			}
 			else
 			{
 				instance_create_layer(0, 192 + 128 * _i, "Instances", _land_vehicles_left);    
+				if _land_vehicles_left == ob_rider_left
+				{
+					instance_create_layer(0, 192 + 128 * _i, "Instances", ob_motorcycle_left);
+				}
 			}
 			//instance_create_layer(0, 192 + 128 * _i, "Instances", _land_vehicles);    
 		}
