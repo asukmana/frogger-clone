@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"ob_motorcycle",
-  "eventList":[],
+  "%Name":"ob_vehicles",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"ob_motorcycle",
+  "name":"ob_vehicles",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sp_motorcycle",
-    "path":"sprites/sp_motorcycle/sp_motorcycle.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

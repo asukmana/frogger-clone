@@ -1,15 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"ob_ship",
-  "eventList":[],
+  "%Name":"ob_vehicles_right",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"ob_ship",
+  "name":"ob_vehicles_right",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"ob_vehicles",
+    "path":"objects/ob_vehicles/ob_vehicles.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,10 +33,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sp_ship",
-    "path":"sprites/sp_ship/sp_ship.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
