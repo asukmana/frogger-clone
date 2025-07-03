@@ -1,0 +1,6 @@
+player_speed = 5;
+image_speed = 0;
+
+//0.25 is player_scale
+player_width = sprite_get_width(sp_idle) * 0.25;
+player_height = sprite_get_height(sp_idle) * 0.25;

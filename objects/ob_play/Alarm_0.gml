@@ -5,8 +5,8 @@ if global.player_live > 0
 	{
 		if _i < 5
 		{
-		var _water_vehicles_left = choose(ob_ship_left, ob_rock_left);
-		var _water_vehicles_right = choose(ob_ship_right, ob_rock_right);
+		var _water_vehicles_left = choose(ob_ship_left, ob_ship_left, ob_rock_left);
+		var _water_vehicles_right = choose(ob_ship_right, ob_ship_right, ob_rock_right);
 			if _i % 2 == 0
 			{
 				instance_create_layer(room_width, 192 + 128 * _i, "Instances", _water_vehicles_right);    
@@ -36,13 +36,6 @@ if global.player_live > 0
 		}
 	}
 
-	var random_multiplier = random_range(0.1, 1);
+	var random_multiplier = random_range(1, 2);
 	alarm[0] = random_multiplier * game_get_speed(gamespeed_fps);
 }
-
-//switch y
-//{
-//	case 192:
-//		instance_create_layer(0, y, "Instances", ob_ship);
-//		break;
-//}
