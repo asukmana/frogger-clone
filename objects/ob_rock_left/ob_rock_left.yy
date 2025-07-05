@@ -1,17 +1,19 @@
 {
   "$GMObject":"",
   "%Name":"ob_rock_left",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"ob_rock_left",
   "overriddenProperties":[],
   "parent":{
-    "name":"vehicles left",
-    "path":"folders/Objects/vehicles left.yy",
+    "name":"Rocks",
+    "path":"folders/Objects/Rocks.yy",
   },
   "parentObjectId":{
-    "name":"ob_vehicles_left",
-    "path":"objects/ob_vehicles_left/ob_vehicles_left.yy",
+    "name":"ob_rock",
+    "path":"objects/ob_rock/ob_rock.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

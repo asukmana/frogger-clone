@@ -1,6 +1,7 @@
-if keyboard_check(ord("W"))
+#region Movement
+if keyboard_check_pressed(ord("W"))
 {
-	motion_set(90, player_speed);
+	y -= 128;
 	image_angle = 0;
 	image_speed = 1;
 	sprite_index = sp_walk;
@@ -12,9 +13,9 @@ else if keyboard_check_released(ord("W"))
 	sprite_index = sp_idle;
 }
 
-if keyboard_check(ord("A"))
+if keyboard_check_pressed(ord("A"))
 {
-	motion_set(180, player_speed);
+	x -= 128;//motion_set(180, player_speed);
 	image_angle = 90;
 	image_speed = 1;
 	sprite_index = sp_walk;
@@ -22,14 +23,13 @@ if keyboard_check(ord("A"))
 else if keyboard_check_released(ord("A"))
 {
 	motion_set(180, 0);
-	//image_xscale = 0.5;
 	image_speed = 0;
 	sprite_index = sp_idle;
 }
 
-if keyboard_check(ord("S"))
+if keyboard_check_pressed(ord("S"))
 {
-	motion_set(270, player_speed);
+	y += 128;//motion_set(270, player_speed);
 	image_angle = 180;
 	image_speed = 1;
 	sprite_index = sp_walk;
@@ -41,9 +41,9 @@ else if keyboard_check_released(ord("S"))
 	sprite_index = sp_idle;
 }
 
-if keyboard_check(ord("D"))
+if keyboard_check_pressed(ord("D"))
 {
-	motion_set(0, player_speed);
+	x += 128;//motion_set(0, player_speed);
 	image_angle = 270;
 	image_speed = 1;
 	sprite_index = sp_walk;
@@ -57,6 +57,38 @@ else if keyboard_check_released(ord("D"))
 
 #endregion
 
+var _tl_water = layer_tilemap_get_id("tl_water");
+
+if y <= 704 and y >= 192
+{
+	if position_meeting(x, y, ob_rock_right) or position_meeting(x, y, ob_rock_left)
+	{
+		//show_debug_message("rock");
+		switch y
+		{
+			case 704:
+				x -= ob_vehicles.vehicles_speed;
+				break;
+			case 576:
+				x += 2 * ob_vehicles.vehicles_speed;
+				break;
+			case 448:
+				x -= 3 * ob_vehicles.vehicles_speed;
+				break;
+			case 320:
+				x += 4 * ob_vehicles.vehicles_speed;
+				break;
+			case 192:
+				x -= 5 * ob_vehicles.vehicles_speed;
+				break;
+		}
+	}
+	else
+	{
+		//show_debug_message(string(_tl_water));
+	}
+}
+
 //clamp player movement
-x = clamp(x, player_width / 2 , room_width - player_width / 2);
-y = clamp(y, player_height / 2, room_height - player_height / 2);
+x = clamp(x, 64 , 1600);
+y = clamp(y, 64, 1600);

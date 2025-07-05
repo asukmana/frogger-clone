@@ -6,8 +6,8 @@
   "name":"ob_motorcycle_left",
   "overriddenProperties":[],
   "parent":{
-    "name":"vehicles left",
-    "path":"folders/Objects/vehicles left.yy",
+    "name":"Vehicles left",
+    "path":"folders/Objects/Vehicles/Vehicles left.yy",
   },
   "parentObjectId":{
     "name":"ob_vehicles_left",

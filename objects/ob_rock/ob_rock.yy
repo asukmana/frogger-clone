@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"ob_car_2_left",
-  "eventList":[],
+  "%Name":"ob_rock",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"ob_car_2_left",
+  "name":"ob_rock",
   "overriddenProperties":[],
   "parent":{
-    "name":"Vehicles left",
-    "path":"folders/Objects/Vehicles/Vehicles left.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"ob_vehicles_left",
-    "path":"objects/ob_vehicles_left/ob_vehicles_left.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sp_car_2",
-    "path":"sprites/sp_car_2/sp_car_2.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
