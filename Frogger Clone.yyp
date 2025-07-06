@@ -69,6 +69,8 @@
     {"id":{"name":"ob_vehicles","path":"objects/ob_vehicles/ob_vehicles.yy",},},
     {"id":{"name":"ro_play","path":"rooms/ro_play/ro_play.yy",},},
     {"id":{"name":"so_firework","path":"sounds/so_firework/so_firework.yy",},},
+    {"id":{"name":"so_river","path":"sounds/so_river/so_river.yy",},},
+    {"id":{"name":"so_road","path":"sounds/so_road/so_road.yy",},},
     {"id":{"name":"sp_car_1","path":"sprites/sp_car_1/sp_car_1.yy",},},
     {"id":{"name":"sp_car_2","path":"sprites/sp_car_2/sp_car_2.yy",},},
     {"id":{"name":"sp_car_3","path":"sprites/sp_car_3/sp_car_3.yy",},},

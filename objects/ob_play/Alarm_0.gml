@@ -1,4 +1,8 @@
 randomize();
+
+audio_play_sound(so_river, 0, true, 2);
+audio_play_sound(so_road, 0, true, 2);
+
 if global.player_live > 0
 {
 	for (var _i = 0; _i < 11; _i += 1)
