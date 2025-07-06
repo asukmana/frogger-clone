@@ -57,7 +57,7 @@ else if keyboard_check_released(ord("D"))
 
 #endregion
 
-var _tl_water = layer_tilemap_get_id("tl_water");
+//var _tl_water = layer_tilemap_get_id("tl_water");
 
 if y <= 704 and y >= 192
 {
@@ -86,6 +86,21 @@ if y <= 704 and y >= 192
 	else
 	{
 		//show_debug_message(string(_tl_water));
+		global.player_live = 0;
+		global.player_end = "drown";
+		alarm[0] = 5;
+		instance_create_layer(x, y, "Instances", ob_player_end);
+		instance_destroy();
+	}
+}
+else if y == 64 
+{
+	if x == 832
+	{
+		global.player_end = "winner";
+		global.player_live = 0;
+		instance_create_layer(x, y, "Instances", ob_player_end);
+		instance_destroy();
 	}
 }
 
