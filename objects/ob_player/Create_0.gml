@@ -1,4 +1,4 @@
-player_speed = 5;
+player_speed = 4;
 image_speed = 0;
 blink_count = 0;
 
