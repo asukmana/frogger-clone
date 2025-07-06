@@ -19,6 +19,9 @@ if global.player_live == 0
 		case "winner":
 			draw_text_transformed(view_wport[0] / 2, view_hport[0] / 2, "You\nwin", 1, 1, 0);
 			break;
+		case "time":
+			draw_text_transformed(view_wport[0] / 2, view_hport[0] / 2, "Time's up\nGame Over", 1, 1, 0);
+			break;
 	//show_debug_message("game over");
 	}
 }

@@ -1,4 +1,6 @@
-	//var _color = make_colour_rgb(irandom(255),irandom(255),irandom(255));
-	//var _position_x = random(view_wport[0]);
-	//var _position_y = random(view_hport[0]);
-	//effect_create_above(ef_firework, room_width, view_hport[0], 5, _color);
+if global.player_time == 0
+{
+		global.player_end = "time";
+		global.player_live = 0;
+		instance_create_layer(x, y, "Instances", ob_player_end);
+}

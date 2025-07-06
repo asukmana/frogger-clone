@@ -9,6 +9,11 @@ draw_set_color(c_black);
 
 //draw_set_color(c_black);
 
+draw_set_halign(fa_left);
+draw_set_valign(fa_bottom);
+
+draw_text_transformed(10, view_hport[0] - 10, string(global.player_time), 0.5, 0.5, 0);
+
 for (var i = 0; i < global.player_live; i += 1)
 {
 	draw_sprite_ext(sp_idle, -1, view_wport[0] - 30 - 40 * i, view_hport[0] - 30, 0.0625, 0.0625, 0, c_white, 1);

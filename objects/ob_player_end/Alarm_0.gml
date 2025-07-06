@@ -1,4 +1,4 @@
-if global.player_end == "run over" or global.player_end == "drown"
+if global.player_end == "run over" or global.player_end == "drown" or global.player_end == "time" 
 {
 	game_end();
 }

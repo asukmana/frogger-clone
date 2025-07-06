@@ -77,7 +77,6 @@
     {"id":{"name":"sp_car_4","path":"sprites/sp_car_4/sp_car_4.yy",},},
     {"id":{"name":"sp_car_5","path":"sprites/sp_car_5/sp_car_5.yy",},},
     {"id":{"name":"sp_idle","path":"sprites/sp_idle/sp_idle.yy",},},
-    {"id":{"name":"sp_jump","path":"sprites/sp_jump/sp_jump.yy",},},
     {"id":{"name":"sp_land","path":"sprites/sp_land/sp_land.yy",},},
     {"id":{"name":"sp_motorcycle","path":"sprites/sp_motorcycle/sp_motorcycle.yy",},},
     {"id":{"name":"sp_rider","path":"sprites/sp_rider/sp_rider.yy",},},

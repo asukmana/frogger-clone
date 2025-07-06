@@ -1,3 +1,5 @@
+///@description Create vehicles
+
 randomize();
 
 audio_play_sound(so_river, 0, true, 2);
@@ -9,8 +11,8 @@ if global.player_live > 0
 	{
 		if _i < 5
 		{
-		var _water_vehicles_left = choose(ob_ship_left, ob_rock_left);
-		var _water_vehicles_right = choose(ob_ship_right, ob_rock_right);
+		var _water_vehicles_left = choose(ob_ship_left, ob_rock_left, ob_rock_left);
+		var _water_vehicles_right = choose(ob_ship_right, ob_rock_right, ob_rock_right);
 			if _i % 2 == 0
 			{
 				instance_create_layer(room_width, 192 + 128 * _i, "Instances", _water_vehicles_right);    
@@ -26,8 +28,8 @@ if global.player_live > 0
 		}
 		else
 		{			
-			var _land_vehicles_left = choose(ob_car_1_left, ob_car_2_left, ob_car_3_left, ob_car_4_left, ob_car_5_left, ob_rider_left);
-			var _land_vehicles_right = choose(ob_car_1_right, ob_car_2_right, ob_car_3_right, ob_car_4_right, ob_car_5_right, ob_rider_right);
+			var _land_vehicles_left = choose(ob_car_1_left, ob_car_2_left, ob_car_3_left, ob_car_4_left, ob_car_5_left, ob_car_5_left, ob_rider_left);
+			var _land_vehicles_right = choose(ob_car_1_right, ob_car_2_right, ob_car_3_right, ob_car_4_right, ob_car_5_right, ob_car_5_right, ob_rider_right);
 			if _i % 2 == 0
 			{
 				instance_create_layer(room_width, 192 + 128 * _i, "Instances", _land_vehicles_right);
